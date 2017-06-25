@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easha Ann</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Abel|Wire+One|Mr+Dafoe' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+    <!-- facebook like button javascript -->
+    <div id="fb-root"></div>
+      
+
+    <!--==============================
+    navbar
+    =========================-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="nav1"role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="projectName">
+            <a class="navbar-brand" id="name" href="#">EASHA</a>
+          </div> <!--end projectName -->
+       </div> <!--end navbar-header -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right pull-right">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WORK <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#my-works" id="dropdwn-fonts">My works</a></li>
+                <!-- <li><a href="#more" id="dropdwn-fonts">More</a></li> -->
+                <li role="separator" class="divider" id="dropdwn-fonts"></li>
+                <li><a href="#more-heading" id="dropdwn-fonts">More</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div> <!-- enavbar-collapse collapse-->
+      </div> <!-- end nav container-->
+    </nav> <!-- end navbar-->
+
+    <!-- =======================================
+    Hero image section 
+    ================================-->
+    <div class="container-fluid" id="home">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/c1.jpg" alt="abc">
+            <div class="carousel-caption" id="hero-header">
+              <h1>Easha Ann</h1>
+              <p>Web developer</p><hr id="line0">
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/c2.jpg" alt="ghg">
+            <div class="carousel-caption" id="hero-header">
+            <h1>I love to build amazing applications that are simple, beautiful and easy to use.</h1>  
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/c3.jpg" alt="ghg">
+            <div class="carousel-caption" id="hero-header">
+            <h1>Let's build somethng great</h1>
+            </div>
+          </div>
+        </div>
+        <!--*** Controls*** -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div> <!-- end of hero image section -->
+
+    <!-- ===================================================
+    About section
+    ================================-->
+    <div class="main-area1">
+      <div class="container" id="about"> 
+        <div><img src="img/d1.png" class="deco1"></div>
+        <h1 id="about-me">About Me <span class="glyphicon glyphicon-user" aria-hidden="true"></span></h1><hr id="line1">
+        <div class="row">
+          <div class="col-md-4 col-xs-12 about-section1">
+            <img src="img/img1.jpg" class="img-responsive" id="about-img">
+          </div>
+          <div class="col-md-8 col-xs-12 about-section2">
+            <h2 id="abt-sub">Hi there, </h2>
+            <p id="about-desc">Thanks for dropping by. I am Easha, creative web developer based in UAE. I have experience building web apps from small landing pages to complete ecommerce sites using Ruby on Rails. Currently, I am seeking an entry level position in a reputed company.</p>
+
+            <p class="sub-heading"><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> My Skills</p>
+            <ul class="list">
+              <li># HTML, CSS, JavaScript, jQuery</li>
+              <li># Ruby on Rails, SQL</li>
+              <li># Responsive web design /Bootstrap and media queries</li>
+              <li># Git/Github Version Control</li>
+              <li># RSpec and FactoryGirl for unit and functional testing</li>  
+              <li># WordPress</li>
+            </ul>
+            <p></p>
+          </div>
+        </div>
+      </div> <!--end of about section-->
+    </div>
+
+    <!-- ==================================================
+    Contact Details 
+    ===================================-->
+    <div class="container-fluid" id="contact-details" data-stellar-background-ratio="0.01">
+      <div class="container contact-section-full" id="contact">
+        <div ><img src="img/d2.png" class="deco2"></div><br>
+        <h1 id="contact-me" ><span class="glyphicon glyphicon-phone"> </span> Contact Me</h1><hr id="line2"><br>
+        <div class=" row conact-section1"><!--  fisrt contact section  -->
+          <div class= " col-md-6 col-xs-12 contact-form"> 
+            <form method="POST" action="https://formspree.io/donaeasha25@gmail.com">
+              <div class="form-group">
+              <label for="name" id="label">Name<span class="required">*</span></label>
+              <input placeholder="Name" id="name" class="form-control" type=”text” title="your name" minlength=3 name="name" required>
+            </div>
+              <div class="form-group">
+                <label for="email" id="label">Email address<span class="required">*</span></label>
+                <input placeholder="Email" type="email" class="form-control" id="email" required>
+              </div>
+              <div>
+               <label for="email" id="label">Message</label>
+                <textarea placeholder="Your message here" class=" form-control message-box msg" class="form-control"style="resize:none" cols="50" rows="5" id="message" minlength=4 required></textarea>
+                </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-warning">Submit</button>
+            </form> 
+          </div> 
+          <div class= " col-md-6 col-xs-12 ">
+            <div id="map"></div>  <!-- map details -->
+            <div id="address">
+              <h4 class="light-font"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span>  Address: Discovery Gardens, Dubai.</h4>
+              <h4 class="light-font"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Phone Num : +971 55 197 0151</h4>
+              <h4 class="light-font"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>   Email : donaeasha25@gmail.com</h4>
+            </div>
+          </div>
+        </div> 
+      </div > 
+    </div>  <!-- end of contact container here -->
+
+
+   <!-- ====================================================
+    faq section
+    ====================================-->
+    <div class="faq-section" id="faq"> 
+      <div class="faq-container">
+        <div ><img src="img/d3.png" class="deco3"></div>
+        <h2 id="faq-heading">FAQs <span class="glyphicon glyphicon-hand-right" ></span></h2><hr id="line3"><br>
+        <div id="faq-panel">
+          <div class="panel-group" id="accordion"> <!--faq-heading-->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" id="panel-color"  data-parent="#accordion" href="#collapseOne">
+                    What is the role of a web developer?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  Web Developer Job Responsibilities: The role is responsible for designing, coding and modifying websites, from layout to function and according to a client's specifications. Strive to create visually appealing sites that feature user-friendly design and clear navigation.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" id="panel-color" data-parent="#accordion" href="#collapseTwo">
+                    What is the difference between a web developer and a web designer?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Web designers use various design programs such as Adobe Photoshop to create the layout and other visual elements of the website. ... Web developers use HTML, CSS, Javascript, PHP and other programming languages to bring to life the design files..
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" id="panel-color" data-parent="#accordion" href="#collapseThree">
+                    Who is a web developer?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                  A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications, or distributed network applications that are run over HTTP from a web server to a web browser.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" id="panel-color" data-parent="#accordion" href="#collapseFour">
+                    What skills do you need to be a web developer? 
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <h4>wireframe/layout a website or web application.</h4>
+                  <h4>write HTML and CSS from scratch.<h4>
+                  <h4>take a PSD and turn it into a working website.</h4>
+                  <h4>add interactivity to a website with JavaScript (or jQuery)</h4> 
+                  <h4>write a basic application in an object-oriented programming language like Ruby or Python or PHP.</h4>   
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default" id="last-faq">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" id="panel-color" data-parent="#accordion" href="#collapseFive">
+                    What do you do as a web developer?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse">
+                <div class="panel-body">
+                  They create the site's layout and integrate graphics, applications (such as a retail checkout tool), and other content. They also write web-design programs in a variety of computer languages, such as HTML or JavaScript. Webmasters maintain websites and keep them updated..
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div> <!-- faq section ends here -->
+
+
+    <!-- =============================================
+    work section
+    ==================================== -->
+    <div class="main-area2" id="my-works"> 
+      <div class="container">
+        <div><img src="img/d3.png" class="deco4"></div>
+        <h1 id="about-me">Works<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span></h1><hr id="line4">
+        <h2>Projects I am currently working on,</h2>
+        <div class="row" id="current-proj">
+          <div class="col-md-6 proj-pic" ><a href="https://dubaibikes.herokuapp.com/" target="_blank"><img src="img/w1.png" class="img-responsive"></a></div>
+          <div class="col-md-6  proj-pic" id="proj2"><a href="https://dubaienews.herokuapp.com/" target="_blank"><img src="img/w2.png" class="img-responsive"></a></div>
+        </div>
+      </div>
+    </div>    <!-- work area end here   -->
+
+
+    <!-- ========================================
+    summary section 
+    ============================== -->
+    <div id="summary"> 
+      <div class="container">
+        <div ><img src="img/d2.png" class="deco5"></div>
+        <h1 id="more-heading">More <span class="glyphicon glyphicon-link" ></span></h1><hr id="line3"><br>
+        <div  id="summary-content">
+
+          <div class="row"><!-- resume button -->
+            <div class="modal-button"> 
+              <button class="btn btn-default" id="resume-btn" data-toggle="modal" data-target=".bs-example-modal-lg">Resume</button>
+            </div>
+          </div>
+        <!-- large modal -->
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Resume</h4>
+                </div>
+                <div class="modal-body">
+                  <embed id="modalembed" src="img/pdf.pdf" class="img-responsive">
+                </div>
+              </div>
+            </div>
+          </div> <!-- resume section ends here -->
+          <br>
+          <p>I <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> sharing</p><br>
+          <ul class="logos">
+            <li><div><a href="https://www.linkedin.com/in/easha-ann-9061b242/" target="_blank"><img src="img/linkedin.png" class="img-responsive"style="background-color:grfeen"></a></div></li>
+            <li><div><a href="https://github.com/Eashaann" target="_blank"><img src="img/git.png"  class="img-responsive" style="background-color:refd"></a></div></li>
+            <li><div><a href="#"><img src="img/twitter.png"  class="img-responsive"style="background-color:recd"></a></div></li>
+          </ul>
+        <div id="summary-text">
+          <p>Thank you for stopping by and checking my work :)</p>
+          <p>| more coming soon |</p>
+           <!-- facebook button -->
+           <div id="share-btn">
+            <div class="fb-like" data-href="http://eashaann.bitballoon.com/" data-width="30px" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+           </div>
+        </div>
+      </div>
+    </div>
+   </div> <!-- summary section ends here-->
+   
+
+     <!-- ========================================
+     side icons
+    ====================   -->        
+    <div class="col-md-12" id="social-media"> 
+      <ul class="social-network social-circle">
+        <li><a href="https://github.com/Eashaann" target="_blank" class="icoGithub img-responsive" title="Github"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.facebook.com/easha.ann" target="_blank" class="icoFacebook img-responsive" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" class="icoTwitter img-responsive" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" class="icoGoogle img-responsive" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/easha-ann-9061b242/" target="_blank" class="icoLinkedin img-responsive" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+      </ul>       
+     </div> <!-- end of side icons -->
+
+    <!-- ========================================
+    footer section
+    ====================== -->
+    <footer class="container-fluid" id="footer">
+      <ul>
+        <li id="footer-name">  &copy Easha</li>
+        <li class="footer-btn"><a href="https://www.facebook.com/easha.ann" target="_blank" ><i class="fa fa-facebook"></i></a></li>
+        <li class="footer-btn"><a href="https://www.linkedin.com/in/easha-ann-9061b242/" target="_blank" ><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li class="footer-btn"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li class="footer-btn"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+      </ul> 
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JS -->    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Can place script tags with JavaScript files here -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="js/work.js"></script>
+    <script src="js/scripts.js"></script>
+
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGVzTS26LGUyePyE4o7it4LZqAX6P7ZE&callback=initMap"
+    async defer></script>
+
+  </body>
+</html>
+
+
+
