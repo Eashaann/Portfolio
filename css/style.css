@@ -118,6 +118,7 @@ Contact section
 .conact-section1{
 	padding: 5%; 
 }
+/*form styles*/
 .contact-form{
 	padding-bottom: 15%;
 }
@@ -199,15 +200,23 @@ works area
 	left: 48%;
 	width: 10%;
 }
-#current-proj{
-	padding-top: 5%;
-}
-#proj2{
-	padding-top: 2%; 
-}
 #line4{
 	border-top: 1px solid #7c7676;
 	padding-bottom: 5%;
+}
+#current-proj{
+	padding-top: 5%;
+}
+#work-icons{
+	margin: auto;
+}
+#work-icons:hover{
+-moz-transform: rotate(-15deg);
+-webkit-transform: rotate(-15deg);
+-o-transform: rotate(-15deg);
+-ms-transform: rotate(-15deg);
+transform: rotate(-15deg); 
+border: 2px solid #000;
 }
 #share-btn{
 	color: #9d9d9d;
@@ -237,9 +246,7 @@ more area
 .logo a:hover{
 	background-color:red;
 }
-#summary-text{
-	padding-bottom: 10%;
-}
+/*resume styles*/
 #resume-btn{
 	background-color: #34495e;
 	color: #000;
@@ -250,16 +257,26 @@ more area
 }
 .modal-content{
   background-color: #000;
-  padding: 10%;
 }
 #modalembed{
   height: 500px; 
   width: 100%;
 }
-.model-body{
-	width: 100%;
+#close{
+	color: #fff;;
+} 
+/*social media buttons*/
+#twitter-share{
+	display: inline-block;
+	position: relative;
+  top: 0.4em;
 }
-
+#share-btn{
+	display: inline-block;
+}
+#summary-text{
+	padding-bottom: 5%;
+}
 
 /*=========================
   side icons
@@ -434,25 +451,25 @@ media queries
 	}
 	.navbar-right{
 		padding-left: 25px; 
-	 }
+	}
 	.collapsed{
 		margin-right: 25px;
-	 }
+	}
 	 #hero-header{
 		margin-bottom: 6%;
 	}
 	#dropdwn-fonts {
 		font-size: 0.5em;  
-	 }
+	}
 	 .main-area1{
 	 	padding: 0 20px;
-	 }
+	}
 	#about-me,
 	#contact-me,
 	#faq-heading,
 	#more-heading{
 		font-size: 4em;  
-	 }
+	}
 	#abt-sub{
 		font-size: 3em;
 	}
@@ -463,6 +480,14 @@ media queries
 	.faq-container{
 		width: 80%;
 	}
+	.main-area2 {
+    height: 40em;
+	}
+	/*resume*/
+	#modalembed {
+    height: 30em;
+	}
+	/*social media*/
 	#social-media{
 	position: fixed;  
 	bottom: 30%;
@@ -470,6 +495,8 @@ media queries
 	width: 5%;
 	}
 }
+
+
 
 
 

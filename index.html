@@ -42,7 +42,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WORK <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#my-works" id="dropdwn-fonts">My works</a></li>
+                <li><a href="#my-works" id="dropdwn-fonts">My work</a></li>
                 <!-- <li><a href="#more" id="dropdwn-fonts">More</a></li> -->
                 <li role="separator" class="divider" id="dropdwn-fonts"></li>
                 <li><a href="#more-heading" id="dropdwn-fonts">More</a></li>
@@ -266,9 +266,9 @@
         <div><img src="img/d3.png" class="deco4"></div>
         <h1 id="about-me">Works<span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span></h1><hr id="line4">
         <h2>Projects I am currently working on,</h2>
-        <div class="row" id="current-proj">
-          <div class="col-md-6 proj-pic" ><a href="https://dubaibikes.herokuapp.com/" target="_blank"><img src="img/w1.png" class="img-responsive"></a></div>
-          <div class="col-md-6  proj-pic" id="proj2"><a href="https://dubaienews.herokuapp.com/" target="_blank"><img src="img/w2.png" class="img-responsive"></a></div>
+        <div class="row">
+          <div class="col-md-6 col-xs-6 proj-pic" id="current-proj"><a href="https://dubaibikes.herokuapp.com/" target="_blank" ><img src="img/w1.png" class="img-responsive" id="work-icons"></a></div>
+          <div class="col-md-6  col-xs-6  proj-pic" id="current-proj"><a href="https://dubaienews.herokuapp.com/" target="_blank"><img src="img/w2.png" class="img-responsive" id="work-icons"></a></div>
         </div>
       </div>
     </div>    <!-- work area end here   -->
@@ -293,7 +293,7 @@
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                   <h4 class="modal-title" id="myModalLabel">Resume</h4>
                 </div>
                 <div class="modal-body">
@@ -307,15 +307,19 @@
           <ul class="logos">
             <li><div><a href="https://www.linkedin.com/in/easha-ann-9061b242/" target="_blank"><img src="img/linkedin.png" class="img-responsive"style="background-color:grfeen"></a></div></li>
             <li><div><a href="https://github.com/Eashaann" target="_blank"><img src="img/git.png"  class="img-responsive" style="background-color:refd"></a></div></li>
-            <li><div><a href="#"><img src="img/twitter.png"  class="img-responsive"style="background-color:recd"></a></div></li>
+            <li><div><a href="https://twitter.com/Eashaann" target="_blank"><img src="img/twitter.png"  class="img-responsive"style="background-color:recd"></a></div></li>
           </ul>
         <div id="summary-text">
           <p>Thank you for stopping by and checking my work :)</p>
           <p>| more coming soon |</p>
-           <!-- facebook button -->
-           <div id="share-btn">
-            <div class="fb-like" data-href="http://eashaann.bitballoon.com/" data-width="30px" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-           </div>
+          <!-- twitter button -->
+          <div id="twitter-share">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a>
+          </div>
+          <!-- facebook button -->
+          <div id="share-btn">
+            <div class="fb-like" data-href="http://eashaann.bitballoon.com/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -329,7 +333,7 @@
       <ul class="social-network social-circle">
         <li><a href="https://github.com/Eashaann" target="_blank" class="icoGithub img-responsive" title="Github"><i class="fa fa-github"></i></a></li>
         <li><a href="https://www.facebook.com/easha.ann" target="_blank" class="icoFacebook img-responsive" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#" class="icoTwitter img-responsive" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://twitter.com/Eashaann" target="_blank" class="icoTwitter img-responsive" title="Twitter"><i class="fa fa-twitter"></i></a></li>
         <li><a href="#" class="icoGoogle img-responsive" title="Google +"><i class="fa fa-google-plus"></i></a></li>
         <li><a href="https://www.linkedin.com/in/easha-ann-9061b242/" target="_blank" class="icoLinkedin img-responsive" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
       </ul>       
@@ -343,7 +347,7 @@
         <li id="footer-name">  &copy Easha</li>
         <li class="footer-btn"><a href="https://www.facebook.com/easha.ann" target="_blank" ><i class="fa fa-facebook"></i></a></li>
         <li class="footer-btn"><a href="https://www.linkedin.com/in/easha-ann-9061b242/" target="_blank" ><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        <li class="footer-btn"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li class="footer-btn"><a href="https://twitter.com/Eashaann" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         <li class="footer-btn"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
       </ul> 
     </footer>
@@ -357,7 +361,7 @@
 
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEGVzTS26LGUyePyE4o7it4LZqAX6P7ZE&callback=initMap"
     async defer></script>
-
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
 
