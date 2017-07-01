@@ -40,7 +40,7 @@ $(document).ready(function(){
   });
 
   // Stellar
-  $("#faq").stellar();
+  $.stellar();
 
   // Tooltips
   $(function () {

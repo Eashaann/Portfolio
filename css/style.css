@@ -10,7 +10,7 @@ body{
 	position: relative; 
 }
 
-/*===========================
+/*=======================
 nav bar
 ===============*/
 .navbar>.container-fluid .navbar-brand{
@@ -29,9 +29,9 @@ nav bar
 	font-size: 2.5em; 
 }
 
-/*==============================
+/*=========================
 carousel styles
-====================*/
+================*/
 .container-fluid{
 	padding-left: 0;
 	padding-right: 0; 
@@ -47,7 +47,7 @@ carousel styles
 	margin: auto;
 }
 
-/*==============================
+/*=========================
 glyphicon 
 ==================*/
 .glyphicon:hover{
@@ -58,7 +58,7 @@ glyphicon
 }
 
 
-/*===============================
+/*=========================
 about section
 ==================*/
 .main-area1{
@@ -69,21 +69,25 @@ about section
 	width: 10%;
 	left: 45%;
 }
+.heading{
+	text-align: right; 
+}
 #line1{
 	border-top: 1px solid #7c7676;
 }
-.about-section1{
-	padding-top: 5em; 
+.about-row{
+	background-color: red; 
 }
-#about-me{
-	text-align: right;
+/*about image*/
+.about-section1{
+	padding-top: 5%;
+	padding-left: 5%;
 }
 #about-img{
-	border-radius: 500em;
-	width: 100%;
+	border-radius: 400em;
 }
+/*about description*/
 .about-section2{
-	margin: auto;
 	padding: 0 5em 5em 10em;
 }
 .list{
@@ -91,14 +95,14 @@ about section
 }
 
 
-/*=================================
+/*===========================
 Contact section 
 =======================*/
 #contact-details{
 	background:url("../img/c6.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	height: 100em;
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-color: #000;
 	color: #fff;
 }
 .deco2{
@@ -115,12 +119,10 @@ Contact section
 .glyphicon-phone:hover{
 	color: #34495e;
 }
-.conact-section1{
-	padding: 5%; 
-}
+
 /*form styles*/
 .contact-form{
-	padding-bottom: 15%;
+	padding-bottom: 10%; 
 }
 #label{
 	color: #fff;
@@ -144,29 +146,32 @@ google maps
 }
 
 
-/*=============================
+/*===========================
 faq section 
 ==================*/
 .faq-section{
 	background:url("../img/c9.jpg");
-	background-size: cover;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	width: 100%;
 }
 .faq-container{
 	width: 60%;
-	margin: auto;
-	height: 90em; 
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10%;
 }
 .deco3{
 	position: relative;
 	width: 10%;
 	left: 48%;
 }
-#faq-panel{
-	padding-top: 6%;
-}
 #line3{
 	border-top: 1px solid #34495e;
+}
+/*panel styles*/
+#faq-panel{
+	padding-top: 6%;
 }
 .panel-default>.panel-heading{
 	background-color: #dcdcdc; 
@@ -182,9 +187,6 @@ faq section
 .panel-title{
 	color: #41676d;
 	font-size: 2em;
-}
-#last-faq{
-	margin-bottom: 150px;
 }
 
 
@@ -209,21 +211,27 @@ works area
 }
 #work-icons{
 	margin: auto;
+	-moz-transition: 3s;
+	-webkit-transition: 3s;
+	-o-transition: 3s;
+	-ms-transition: 3s;
+	transition: 3s;
 }
 #work-icons:hover{
--moz-transform: rotate(-15deg);
--webkit-transform: rotate(-15deg);
--o-transform: rotate(-15deg);
--ms-transform: rotate(-15deg);
-transform: rotate(-15deg); 
-border: 2px solid #000;
+ 	border: 5px solid #000;
+ 	border-radius: 15%;
+	-moz-transform: rotateY(360deg);
+	-webkit-transform: rotateY(360deg);
+	-o-transform: rotateY(360deg);
+	-ms-transform: rotateY(360deg);
+	transform: rotateY(360deg);
 }
 #share-btn{
 	color: #9d9d9d;
 }
 
 
-/*=============================
+/*===========================
 more area
 ==================*/
 #summary{
@@ -373,9 +381,9 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 
-/*===================
+/*===========================
 footer
-===========*/
+=================*/
 
 footer{
  height: 50px; 
@@ -399,9 +407,9 @@ footer ul li{
 }
 
 
-/*===================
+/*============================
 Typography
-==========*/
+===============*/
 h1,
 h2,
 h3,
@@ -419,10 +427,11 @@ p,
 li{
 	font-size: 2.5em;
 }
+/*drop down menu*/
 #dropdwn-fonts {
 	font-size: 0.5em;  
 }
-#about-me,
+.heading,
 #contact-me,
 #faq-heading,
 #more-heading{
@@ -437,49 +446,46 @@ li{
 }
 
 
-/*======================
+/*=========================
 media queries
-=============*/
+=================*/
 @media (max-width: 767px){
-	p,
-	li{
-		font-size: 2em;
-	}
-	#hero-header h1,
-	#hero-header p{
-		font-size: 1.5em;
-	}
+
+/*	nav bar*/
 	.navbar-right{
 		padding-left: 25px; 
 	}
 	.collapsed{
 		margin-right: 25px;
 	}
-	 #hero-header{
+
+	/*image carousel*/
+	#hero-header h1,
+	#hero-header p{
+		font-size: 1.5em;
+	}
+	#hero-header{
 		margin-bottom: 6%;
 	}
-	#dropdwn-fonts {
-		font-size: 0.5em;  
+
+/*About-section*/
+	.main-area1{
+		padding: 0 20px;
 	}
-	 .main-area1{
-	 	padding: 0 20px;
+	#about-img{
+		width: 60%;
+		margin-left: 22%;
 	}
-	#about-me,
-	#contact-me,
-	#faq-heading,
-	#more-heading{
-		font-size: 4em;  
-	}
-	#abt-sub{
-		font-size: 3em;
-	}
-	.about-section1,
 	.about-section2{
-		padding: 0;
+		padding: 5px;
 	}
+
+	/*faq section*/
 	.faq-container{
 		width: 80%;
 	}
+
+	/*work section*/
 	.main-area2 {
     height: 40em;
 	}
@@ -489,10 +495,31 @@ media queries
 	}
 	/*social media*/
 	#social-media{
-	position: fixed;  
-	bottom: 30%;
-	left:0;
-	width: 5%;
+		position: fixed;  
+		bottom: 30%;
+		left:0;
+		width: 5%;
+	}
+
+	/*Typography*/
+	p,
+	li{
+		font-size: 2em;
+	}
+		#dropdwn-fonts {
+		font-size: 0.5em;  
+	}
+	.heading,
+	#contact-me,
+	#faq-heading,
+	#more-heading{
+		font-size: 4em;  
+	}
+	.main-area2 h2{
+		font-size: 2em;
+	}
+	#abt-sub{
+		font-size: 3em;
 	}
 }
 
